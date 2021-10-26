@@ -1,0 +1,428 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.tonlisboa.lojavirtual.lojavirtual"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:10:5-66
+14-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:10:22-64
+15    <!--
+16     io.flutter.app.FlutterApplication is an android.app.Application that
+17         calls FlutterMain.startInitialization(this); in its onCreate method.
+18         In most cases you can leave this as-is, but you if you want to provide
+19         additional functionality it is fine to subclass or reimplement
+20         FlutterApplication and put your custom class here.
+21    -->
+22    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:9:5-75
+22-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:9:17-73
+23
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+24-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+25-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->[:geolocator] C:\Users\tonli\StudioProjects\loja_virtual-master\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+26-->[:geolocator] C:\Users\tonli\StudioProjects\loja_virtual-master\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+27    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+27-->[:vibration] C:\Users\tonli\StudioProjects\loja_virtual-master\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-66
+27-->[:vibration] C:\Users\tonli\StudioProjects\loja_virtual-master\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-63
+28    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+29-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
+29-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:22-76
+30    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+30-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:24:5-68
+30-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:24:22-65
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+31-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:26:5-82
+31-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:26:22-79
+32
+33    <application
+33-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:12:5-79:19
+34        android:name="io.flutter.app.FlutterApplication"
+34-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:13:9-57
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\6f5a09b4953ee13b34e15b87364445ea\core-1.2.0\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:15:9-43
+38        android:label="lojavirtual"
+38-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:14:9-36
+39        android:supportsRtl="true" >
+39-->[com.facebook.android:facebook-login:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\d10e830faec794d7488e92b042990695\jetified-facebook-login-5.5.1\AndroidManifest.xml:28:18-44
+40        <activity
+40-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:16:9-49:20
+41            android:name="br.com.tonlisboa.lojavirtual.lojavirtual.MainActivity"
+41-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:17:13-41
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:20:13-163
+43            android:hardwareAccelerated="true"
+43-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:21:13-47
+44            android:launchMode="singleTop"
+44-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:18:13-43
+45            android:theme="@style/LaunchTheme"
+45-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:19:13-47
+46            android:windowSoftInputMode="adjustResize" >
+46-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:22:13-55
+47
+48            <!--
+49                 Specifies an Android theme to apply to this Activity as soon as
+50                 the Android process has started. This theme is visible to the user
+51                 while the Flutter UI initializes. After that, this theme continues
+52                 to determine the Window background behind the Flutter UI.
+53            -->
+54            <meta-data
+54-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:27:13-30:17
+55                android:name="io.flutter.embedding.android.NormalTheme"
+55-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:28:15-70
+56                android:resource="@style/NormalTheme" />
+56-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:29:15-52
+57            <!--
+58                 Displays an Android View that continues showing the launch screen
+59                 Drawable until Flutter paints its first frame, then this splash
+60                 screen fades out. A splash screen is useful to avoid any visual
+61                 gap between the end of Android's launch screen and the painting of
+62                 Flutter's first frame.
+63            -->
+64            <meta-data
+64-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:36:13-39:17
+65                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+65-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:37:15-79
+66                android:resource="@drawable/launch_background" />
+66-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:38:15-61
+67
+68            <intent-filter>
+68-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:40:13-43:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:41:17-68
+69-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:41:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:42:17-76
+71-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:42:27-74
+72            </intent-filter>
+73            <intent-filter>
+73-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:45:13-48:29
+74                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+74-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:46:17-69
+74-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:46:25-66
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:47:17-76
+76-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:47:27-73
+77            </intent-filter>
+78        </activity>
+79        <!--
+80             Don't delete the meta-data below.
+81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+82        -->
+83        <meta-data
+83-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:52:9-54:33
+84            android:name="flutterEmbedding"
+84-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:53:13-44
+85            android:value="2" />
+85-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:54:13-30
+86
+87        <activity
+87-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:56:9-59:71
+88            android:name="com.yalantis.ucrop.UCropActivity"
+88-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:57:13-60
+89            android:screenOrientation="portrait"
+89-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:58:13-49
+90            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+90-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:59:13-69
+91
+92        <meta-data
+92-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:61:9-62:54
+93            android:name="com.facebook.sdk.ApplicationId"
+93-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:61:20-65
+94            android:value="@string/facebook_app_id" />
+94-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:62:13-52
+95
+96        <activity
+96-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:64:9-67:48
+97            android:name="com.facebook.FacebookActivity"
+97-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:64:19-63
+98            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+98-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:65:13-113
+99            android:label="@string/app_name"
+99-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:67:13-45
+100            android:theme="@style/com_facebook_activity_theme" />
+100-->[com.facebook.android:facebook-common:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\9cca9640fd7845f97ec8194a1a52d805\jetified-facebook-common-5.5.1\AndroidManifest.xml:32:13-63
+101        <activity
+101-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:69:9-78:20
+102            android:name="com.facebook.CustomTabActivity"
+102-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:70:13-58
+103            android:exported="true" >
+103-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:71:13-36
+104            <intent-filter>
+104-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:72:13-77:29
+105                <action android:name="android.intent.action.VIEW" />
+105-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:73:17-69
+105-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:73:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:47:17-76
+107-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:47:27-73
+108                <category android:name="android.intent.category.BROWSABLE" />
+108-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:75:17-78
+108-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:75:27-75
+109
+110                <data android:scheme="@string/fb_login_protocol_scheme" />
+110-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:76:17-75
+110-->C:\Users\tonli\StudioProjects\loja_virtual-master\android\app\src\main\AndroidManifest.xml:76:23-72
+111            </intent-filter>
+112        </activity>
+113
+114        <service
+114-->[:cloud_firestore] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+115            android:name="com.google.firebase.components.ComponentDiscoveryService"
+115-->[:cloud_firestore] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:19:13-37
+118            <meta-data
+118-->[:cloud_firestore] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+119                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+119-->[:cloud_firestore] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[:cloud_firestore] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+121            <meta-data
+121-->[:cloud_functions] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfunctions.FlutterFirebaseAppRegistrar"
+122-->[:cloud_functions] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:cloud_functions] C:\Users\tonli\StudioProjects\loja_virtual-master\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+124            <meta-data
+124-->[:firebase_auth] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+125                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+125-->[:firebase_auth] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[:firebase_auth] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+127            <meta-data
+127-->[:firebase_storage] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+128                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+128-->[:firebase_storage] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[:firebase_storage] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+130            <meta-data
+130-->[:firebase_core] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+131                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+131-->[:firebase_core] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[:firebase_core] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+133            <meta-data
+133-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-16:85
+134                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+134-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-127
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+137                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+137-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\bdcf8736bc96671a5be182dfb416a86e\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-functions:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\2a879e3c6f23b4a047467fc2ed56cb9e\jetified-firebase-functions-17.0.0\AndroidManifest.xml:16:13-18:85
+140                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+140-->[com.google.firebase:firebase-functions:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\2a879e3c6f23b4a047467fc2ed56cb9e\jetified-firebase-functions-17.0.0\AndroidManifest.xml:17:17-111
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-functions:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\2a879e3c6f23b4a047467fc2ed56cb9e\jetified-firebase-functions-17.0.0\AndroidManifest.xml:18:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+143                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+143-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1ac5fb94d2dab439ff0831b494b0af48\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+146                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+146-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1ac5fb94d2dab439ff0831b494b0af48\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1ac5fb94d2dab439ff0831b494b0af48\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:32:13-34:85
+149                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+149-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:33:17-96
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:34:17-82
+151        </service>
+152
+153        <provider
+153-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+154            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+154-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+155            android:authorities="br.com.tonlisboa.lojavirtual.lojavirtual.flutter.image_provider"
+155-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+156            android:exported="false"
+156-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+157            android:grantUriPermissions="true" >
+157-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+158            <meta-data
+158-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+159                android:name="android.support.FILE_PROVIDER_PATHS"
+159-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+160                android:resource="@xml/flutter_image_picker_file_paths" />
+160-->[:image_picker] C:\Users\tonli\StudioProjects\loja_virtual-master\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+161        </provider>
+162
+163        <activity
+163-->[:url_launcher] C:\Users\tonli\StudioProjects\loja_virtual-master\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+164            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+164-->[:url_launcher] C:\Users\tonli\StudioProjects\loja_virtual-master\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+165            android:exported="false"
+165-->[:url_launcher] C:\Users\tonli\StudioProjects\loja_virtual-master\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+166            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+166-->[:url_launcher] C:\Users\tonli\StudioProjects\loja_virtual-master\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+167
+168        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+168-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+168-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-101
+169            <intent-filter>
+169-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+170                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+170-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+170-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+171            </intent-filter>
+172        </service>
+173
+174        <activity
+174-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+175            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+175-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+176            android:excludeFromRecents="true"
+176-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+177            android:exported="true"
+177-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+178            android:launchMode="singleTask"
+178-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+179            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+179-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+181        <!--
+182             FirebaseMessagingService performs security checks at runtime,
+183             but set to not exported to explicitly avoid allowing another app to call it.
+184        -->
+185        <service
+185-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1d157ad7512e91fb1d87e4d9837e05d5\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:28:9-34:19
+186            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+186-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1d157ad7512e91fb1d87e4d9837e05d5\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:29:13-82
+187            android:exported="false" >
+187-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\1d157ad7512e91fb1d87e4d9837e05d5\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:30:13-37
+188            <intent-filter android:priority="-500" >
+188-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+189                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+189-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+189-->[:firebase_messaging] C:\Users\tonli\StudioProjects\loja_virtual-master\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+190            </intent-filter>
+191        </service>
+192
+193        <receiver
+193-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:37:9-44:20
+194            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+194-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:38:13-78
+195            android:exported="true"
+195-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:39:13-36
+196            android:permission="com.google.android.c2dm.permission.SEND" >
+196-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:40:13-73
+197            <intent-filter>
+197-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:41:13-43:29
+198                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+198-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:42:17-81
+198-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:42:25-78
+199            </intent-filter>
+200        </receiver>
+201
+202        <provider
+202-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+203            android:name="com.google.firebase.provider.FirebaseInitProvider"
+203-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+204            android:authorities="br.com.tonlisboa.lojavirtual.lojavirtual.firebaseinitprovider"
+204-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+205            android:exported="false"
+205-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+206            android:initOrder="100" />
+206-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\e7530cc6d73fe0ec2768098e6fd53f1f\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+207
+208        <activity android:name="com.facebook.CustomTabMainActivity" />
+208-->[com.facebook.android:facebook-common:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\9cca9640fd7845f97ec8194a1a52d805\jetified-facebook-common-5.5.1\AndroidManifest.xml:33:9-71
+208-->[com.facebook.android:facebook-common:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\9cca9640fd7845f97ec8194a1a52d805\jetified-facebook-common-5.5.1\AndroidManifest.xml:33:19-68
+209        <!--
+210         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+211         with the application context. This config is merged in with the host app's manifest,
+212         but there can only be one provider with the same authority activated at any given
+213         point; so if the end user has two or more different apps that use Facebook SDK, only the
+214         first one will be able to use the provider. To work around this problem, we use the
+215         following placeholder in the authority to identify each host application as if it was
+216         a completely different provider.
+217        -->
+218        <provider
+218-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:39:9-42:40
+219            android:name="com.facebook.internal.FacebookInitProvider"
+219-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:40:13-70
+220            android:authorities="br.com.tonlisboa.lojavirtual.lojavirtual.FacebookInitProvider"
+220-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:41:13-72
+221            android:exported="false" />
+221-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:42:13-37
+222
+223        <receiver
+223-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:44:9-50:20
+224            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+224-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:45:13-86
+225            android:exported="false" >
+225-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:46:13-37
+226            <intent-filter>
+226-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:47:13-49:29
+227                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+227-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:48:17-95
+227-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:48:25-92
+228            </intent-filter>
+229        </receiver>
+230        <receiver
+230-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:51:9-58:20
+231            android:name="com.facebook.CampaignTrackingReceiver"
+231-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:52:13-65
+232            android:exported="true"
+232-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:53:13-36
+233            android:permission="android.permission.INSTALL_PACKAGES" >
+233-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:54:13-69
+234            <intent-filter>
+234-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:55:13-57:29
+235                <action android:name="com.android.vending.INSTALL_REFERRER" />
+235-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:56:17-79
+235-->[com.facebook.android:facebook-core:5.5.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\33f3a83a35f5089193fcd0cded2a9162\jetified-facebook-core-5.5.1\AndroidManifest.xml:56:25-76
+236            </intent-filter>
+237        </receiver>
+238
+239        <activity
+239-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\3e048612d3799077421484434852ba6c\play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+240            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+240-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\3e048612d3799077421484434852ba6c\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+241            android:exported="false"
+241-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\3e048612d3799077421484434852ba6c\play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+242            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+242-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\3e048612d3799077421484434852ba6c\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+243
+244        <meta-data
+244-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\5f91e070193c8d3045bb12f379b1b278\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+245            android:name="com.google.android.gms.version"
+245-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\5f91e070193c8d3045bb12f379b1b278\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+246            android:value="@integer/google_play_services_version" />
+246-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\tonli\.gradle\caches\transforms-2\files-2.1\5f91e070193c8d3045bb12f379b1b278\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+247    </application>
+248
+249</manifest>
